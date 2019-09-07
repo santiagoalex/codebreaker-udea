@@ -13,5 +13,14 @@ app.get('/guess/:number', function (req, res){
     res.send({result: codeBreaker.codeBreaker(number)});    
 });
 
+app.get('delete', function (req, res){
+    res.send({message: 'ja borre'}); 
+});
+
+app.get('upgrade', function (req, res){
+    res.send({message: 'ja actualise'});
+});
+
+
 
 module.exports= app;
